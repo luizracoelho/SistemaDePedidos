@@ -1,7 +1,7 @@
 package sistemadepedidos.exceptions;
 
 /**
- * Exceção que verifica a obrigatoriedade de campos
+ * Exceção que informa que um registro não existe
  * @author LuizRicardo
  */
 public class RegistroJaExisteException extends RuntimeException {

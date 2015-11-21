@@ -9,7 +9,7 @@ import sistemadepedidos.repositorio.ItemPedidoDao;
 import sistemadepedidos.repositorio.PedidoDao;
 
 /**
- * Classe que determina as lógicas de negócio de um pedido
+ * Classe responsável pelas lógicas de negócio de um pedido
  *
  * @author LuizRicardo
  */

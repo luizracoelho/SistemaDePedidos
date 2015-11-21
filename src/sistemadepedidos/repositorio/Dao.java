@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
- *
+ * Classe responsável pela conexão com o banco de dados
  * @author LuizRicardo
  */
 public class Dao {

@@ -1,7 +1,7 @@
 package sistemadepedidos.exceptions;
 
 /**
- * Exceção que verifica a obrigatoriedade de campos
+ * Exceção que informa a obrigatoriedade de campos
  * @author LuizRicardo
  */
 public class CampoObrigatorioNaoPreenchidoException extends RuntimeException {
