@@ -707,7 +707,7 @@ public class TelaPedido extends javax.swing.JInternalFrame {
             
             //Preencher o total geral
             totalGeral = pedido.getValorTotal();
-            txtTotalGeral.setText(String.format("%.2f", CalcularTotalGeral(totalGeral, TipoCalculo.SOMAR)));
+            txtTotalGeral.setText(String.format("%.2f", totalGeral));
             
             //Preencher os itens do pedido
             itensPedido = pedido.getItensPedido();
