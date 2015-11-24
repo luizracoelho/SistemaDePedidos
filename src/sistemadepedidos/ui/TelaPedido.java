@@ -83,7 +83,7 @@ public class TelaPedido extends javax.swing.JInternalFrame {
                 item.getProduto().getDescricao(),
                 String.valueOf(item.getQuant()).replace(".", ","),
                 String.valueOf(item.getVlUnit()).replace(".", ","),
-                String.valueOf(item.getVlTotal()).replace(".", ",")
+                String.format("%.2f", item.getVlTotal()).replace(".", ",")
             });
         }
     }
@@ -707,7 +707,7 @@ public class TelaPedido extends javax.swing.JInternalFrame {
             
             //Preencher o total geral
             totalGeral = pedido.getValorTotal();
-            CalcularTotalGeral(totalGeral, TipoCalculo.SOMAR);
+            txtTotalGeral.setText(String.format("%.2f", CalcularTotalGeral(totalGeral, TipoCalculo.SOMAR)));
             
             //Preencher os itens do pedido
             itensPedido = pedido.getItensPedido();
