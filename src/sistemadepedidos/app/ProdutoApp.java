@@ -62,7 +62,7 @@ public class ProdutoApp {
     /**
      * Método que encontra um Produto
      *
-     * @param codigo Código do produto
+     * @param codigo Código
      * @return Produto
      */
     public Produto Encontrar(int codigo) {
@@ -72,24 +72,6 @@ public class ProdutoApp {
 
             //Encontrar o Produto e retornar
             return produtoDao.Encontrar(codigo);
-        } catch (Exception ex) {
-            throw ex;
-        }
-    }
-
-    /**
-     * Método que encontra um Produto
-     *
-     * @param descricao Descrição
-     * @return Produto
-     */
-    public Produto Encontrar(String descricao) {
-        try {
-            //Instanciar a camada Dao
-            ProdutoDao produtoDao = new ProdutoDao();
-
-            //Encontrar o Produto e retornar
-            return produtoDao.Encontrar(descricao);
         } catch (Exception ex) {
             throw ex;
         }

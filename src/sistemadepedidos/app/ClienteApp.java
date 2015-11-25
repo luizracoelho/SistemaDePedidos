@@ -77,24 +77,6 @@ public class ClienteApp {
     }
 
     /**
-     * Método que encontra um Cliente pelo nome
-     *
-     * @param nome Nome
-     * @return Cliente
-     */
-    public Cliente Encontrar(String nome) {
-        try {
-            //Instanciar a camada Dao
-            ClienteDao clienteDao = new ClienteDao();
-
-            //Encontrar o cliente e retornar
-            return clienteDao.Encontrar(nome);
-        } catch (Exception ex) {
-            throw ex;
-        }
-    }
-
-    /**
      * Método que lista os Clientes
      *
      * @return Lista de Clientes
